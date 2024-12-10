@@ -72,9 +72,15 @@
 }
 
 .rotatingText-adjective:nth-of-type(3) {
-  animation-name: rotate-last;
+  animation-name: rotate;
   animation-duration: 1.5s;
   animation-delay: 3s;
+}
+
+.rotatingText-adjective:nth-of-type(4) {
+  animation-name: rotate-last;
+  animation-duration: 1.5s;
+  animation-delay: 4.25s;
   animation-fill-mode: forwards;
 }
 
