@@ -58,6 +58,14 @@
   margin-bottom: 0;
 }
 
+/* Centering */
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 /* Animation for rotating text */
 .rotatingText-adjective:nth-of-type(1) {
   animation-name: rotate;
