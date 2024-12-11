@@ -1,6 +1,9 @@
 # Sh0bra.github.io
-Creating my website from scratch as a way to learn HTML, CSS and Javascript
-
+My website is based on Neumorphism created by longpdo
+https://github.com/longpdo/neumorphism/tree/master
 
 ## Title Page
-Rotating Text using only CSS
+Uses a landing div with rotating words and type and delete javascript.
+
+
+
