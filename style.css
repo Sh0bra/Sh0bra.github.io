@@ -1,4 +1,22 @@
-/* Navbar */
+/* Korean font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap');
+
+
+div {
+  /* border-width: 1px;
+  border-style: dashed;
+  border-color: black;
+  margin: 10px; */
+  display: block;
+  unicode-bidi: isolate;
+}
+
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+/* Navbar
 .navbar {
   overflow: hidden;
   background-color: #333;
@@ -20,46 +38,39 @@
 .navbar a:hover {
   background: #ddd;
   color: black;
+} */
+
+
+/* Landing Title */
+
+.landing {
+    background: #2b2d2f;
+    color: #fff;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    text-align: center
 }
 
-/* Style the tab container */
-.tab {
-  overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
+.landing,.landing-title {
+    margin: .5rem;
+    padding: .5rem
 }
 
-/* Style the buttons that are used to open the tab content */
-.tab button {
-  background-color: inherit;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: background-color 0.3s ease;  /* Specify transition property */
+.landing-title {
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 48%
 }
 
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #ddd;
+.highlight-title {
+    color: #ff073a;
+    text-shadow: .25rem .25rem .25rem #ff073a;
+    text-align: center;
 }
 
-/* Create an active/current tablink class */
-.tab button.active {
-  background-color: #ccc;
-}
-
-/* Style the tab content */
-.tabcontent {
-  display: none;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none;
-}
-
-
-/* Title Page - Rotating Text */
+/* Landing Title - Rotating Text */
 .rotatingText {
   font-family: "Georgia", serif;
   font-style: italic;
@@ -76,18 +87,10 @@
   position: absolute;
   text-align: center;
   text-transform: uppercase;
-  top: 0;
+  top: 40%;
   left: 0;
   right: 0;
   margin-bottom: 0;
-}
-
-/* Centering */
-.centered {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 /* Animation for rotating text */
@@ -104,6 +107,7 @@
 }
 
 .rotatingText-adjective:nth-of-type(3) {
+  font-family: 'Noto Sans KR', sans-serif;
   animation-name: rotate;
   animation-duration: 1.5s;
   animation-delay: 3s;
@@ -140,4 +144,12 @@
     opacity: 1;
     transform: translate3d(0, 0, 0);
   }
+}
+
+/* mobile example https://www.youtube.com/watch?v=Hsu8uqQTSV8*/
+@media screen and (max-width:600px){
+    aside, section, article {
+        width: 100%;
+    }
+  
 }
